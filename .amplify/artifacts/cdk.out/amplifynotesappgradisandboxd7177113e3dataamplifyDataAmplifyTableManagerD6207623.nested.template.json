@@ -91,8 +91,6 @@
      }
     ]
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/AmplifyTableManager/AmplifyManagedTableIsCompleteRole/Resource"
    }
@@ -188,8 +186,6 @@
      }
     ]
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/Resource"
    }
@@ -216,8 +212,6 @@
      }
     ]
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/DefaultPolicy/Resource"
    }
@@ -267,8 +261,6 @@
     "AmplifyManagedTableOnEventRoleDefaultPolicyF6DABCB6",
     "AmplifyManagedTableOnEventRoleB4E71DEA"
    ],
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-onEvent/Resource",
     "aws:asset:path": "asset.f2c5bec0e463cae18d0bf683be5923ae6bd676a06af1a994bdfa076a66ac07d6",
@@ -313,8 +305,6 @@
    "DependsOn": [
     "AmplifyManagedTableIsCompleteRoleF825222C"
    ],
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-isComplete/Resource",
     "aws:asset:path": "asset.f2c5bec0e463cae18d0bf683be5923ae6bd676a06af1a994bdfa076a66ac07d6",
@@ -352,8 +342,6 @@
      }
     ]
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/Resource"
    }
@@ -399,8 +387,6 @@
      }
     ]
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/DefaultPolicy/Resource"
    }
@@ -434,8 +420,6 @@
     "AmplifyTableWaiterStateMachineRoleDefaultPolicy89F3836A",
     "AmplifyTableWaiterStateMachineRole470BE899"
    ],
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Resource"
    }

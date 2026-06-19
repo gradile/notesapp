@@ -140,8 +140,6 @@
      "Version": "2012-10-17"
     }
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/storage/amplifyNotesDrive/Bucket/Policy/Resource"
    }
@@ -189,8 +187,6 @@
      }
     ]
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role"
    }
@@ -230,8 +226,6 @@
    "DependsOn": [
     "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
    ],
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler",
     "aws:asset:path": "asset.faa95a81ae7d7373f3e1f242268f904eb748d8d0fdd306e8a6fe515a1905a7d6",
@@ -251,8 +245,6 @@
      "Ref": "amplifyNotesDriveBucket18812970"
     }
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/storage/AMPLIFY_NOTES_DRIVE_BUCKET_NAMEParameter/Resource"
    }
@@ -344,8 +336,6 @@
      }
     ]
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/storage/amplify-notesapp-gradi-sandbox-d7177113e3--storageAccess3/Resource"
    }

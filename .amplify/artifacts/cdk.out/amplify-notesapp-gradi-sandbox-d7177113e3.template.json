@@ -1,5 +1,5 @@
 {
- "Description": "{\"createdOn\":\"Windows\",\"createdBy\":\"AmplifySandbox\",\"createdWith\":\"1.23.0\",\"stackType\":\"root\",\"metadata\":{}}",
+ "Description": "{\"createdOn\":\"Windows\",\"createdBy\":\"AmplifySandbox\",\"createdWith\":\"1.2.1\",\"stackType\":\"root\",\"metadata\":{}}",
  "Metadata": {
   "AWS::Amplify::Platform": {
    "version": "1",
@@ -165,7 +165,7 @@
    }
   },
   "awsAppsyncAuthenticationType": {
-   "Value": "AWS_IAM"
+   "Value": "AMAZON_COGNITO_USER_POOLS"
   },
   "awsAppsyncRegion": {
    "Value": {
@@ -210,7 +210,7 @@
    }
   },
   "awsAppsyncAdditionalAuthenticationTypes": {
-   "Value": "AMAZON_COGNITO_USER_POOLS"
+   "Value": "AWS_IAM"
   },
   "storageRegion": {
    "Value": {
@@ -277,7 +277,7 @@
        {
         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
        },
-       "/0dfe08c06a4e719eb2529809f157ec5d1c889fff2a6c247d8b6eef9bc3c5cc16.json"
+       "/ffb9a179028432dd02825ff5f8df5aa67ba947646b11d480e7433c7c264ff50d.json"
       ]
      ]
     }
@@ -345,7 +345,7 @@
        {
         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
        },
-       "/f4bc57004fc242e324a56f89631e757bec87f21e29772e9cadb6810844c596bb.json"
+       "/3f199a2d5632a5b7f00e18d09a510ff63176ab5f0e150fef968ce8c8c385f74f.json"
       ]
      ]
     }
@@ -395,7 +395,7 @@
        {
         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
        },
-       "/70411281b7401d94858f74f564b82bd45331ed8250ea8a4deff1b2905265b998.json"
+       "/48e925e5f58320bdb64f783ee41437b49f906f1b453b532957aa52726f8efb5a.json"
       ]
      ]
     }

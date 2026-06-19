@@ -20,21 +20,9 @@
         "synthesize (C:\\AWS tutorial\\notesapp\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:1:3580)",
         "App.synth (C:\\AWS tutorial\\notesapp\\node_modules\\aws-cdk-lib\\core\\lib\\stage.js:1:4636)",
         "App.synth (C:\\AWS tutorial\\notesapp\\node_modules\\aws-cdk-lib\\core\\lib\\app.js:1:4814)",
-        "process.<anonymous> (C:\\AWS tutorial\\notesapp\\node_modules\\@aws-amplify\\backend\\src\\default_stack_factory.ts:15:11)",
+        "process.<anonymous> (C:\\AWS tutorial\\notesapp\\node_modules\\aws-cdk-lib\\core\\lib\\app.js:1:3773)",
         "Object.onceWrapper (node:events:631:26)",
-        "process.emit (node:events:509:28)",
-        "cdkToolkit.fromAssemblyBuilder.contextStore (file:///C:/AWS%20tutorial/notesapp/node_modules/@aws-amplify/backend-deployer/lib/cdk_deployer.js:204:21)",
-        "async Object.produce (C:\\AWS tutorial\\notesapp\\node_modules\\@aws-cdk\\toolkit-lib\\lib\\api\\cloud-assembly\\source-builder.js:130:36)",
-        "async ContextAwareCloudAssemblySource.produce (C:\\AWS tutorial\\notesapp\\node_modules\\@aws-cdk\\toolkit-lib\\lib\\api\\cloud-assembly\\private\\context-aware-source.js:49:33)",
-        "async assemblyFromSource (C:\\AWS tutorial\\notesapp\\node_modules\\@aws-cdk\\toolkit-lib\\lib\\toolkit\\private\\index.js:21:85)",
-        "async synthAndMeasure (C:\\AWS tutorial\\notesapp\\node_modules\\@aws-cdk\\toolkit-lib\\lib\\toolkit\\toolkit.js:1290:21)",
-        "async Toolkit.synth (C:\\AWS tutorial\\notesapp\\node_modules\\@aws-cdk\\toolkit-lib\\lib\\toolkit\\toolkit.js:245:26)",
-        "async CDKDeployer.deploy (file:///C:/AWS%20tutorial/notesapp/node_modules/@aws-amplify/backend-deployer/lib/cdk_deployer.js:51:29)",
-        "async AmplifySandboxExecutor.<anonymous> (file:///C:/AWS%20tutorial/notesapp/node_modules/@aws-amplify/sandbox/lib/sandbox_executor.js:14:43)",
-        "async file:///C:/AWS%20tutorial/notesapp/node_modules/@aws-amplify/sandbox/lib/file_watching_sandbox.js:216:38",
-        "async FileWatchingSandbox.deploy (file:///C:/AWS%20tutorial/notesapp/node_modules/@aws-amplify/sandbox/lib/file_watching_sandbox.js:213:9)",
-        "async file:///C:/AWS%20tutorial/notesapp/node_modules/@aws-amplify/sandbox/lib/file_watching_sandbox.js:148:17",
-        "async file:///C:/AWS%20tutorial/notesapp/node_modules/@aws-amplify/sandbox/lib/file_watching_sandbox.js:167:21"
+        "process.emit (node:events:521:24)"
       ]
     },
     {
@@ -600,7 +588,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -613,7 +601,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -626,7 +614,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -639,7 +627,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -652,7 +640,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -775,7 +763,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -788,7 +776,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend...",
+        "...aws-cdk-lib...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -801,7 +789,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend...",
+        "...aws-cdk-lib...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -814,7 +802,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend...",
+        "...aws-cdk-lib...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -827,7 +815,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -840,7 +828,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -853,7 +841,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -888,7 +876,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -901,7 +889,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -930,7 +918,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -943,7 +931,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -986,7 +974,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend...",
+        "...aws-cdk-lib...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -999,7 +987,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend...",
+        "...aws-cdk-lib...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -1014,7 +1002,7 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note": [
     {
       "type": "aws:cdk:creationStack",
       "data": [
@@ -1153,7 +1141,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend...",
+        "...aws-cdk-lib...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -1166,7 +1154,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend...",
+        "...aws-cdk-lib...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -1234,7 +1222,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend...",
+        "...aws-cdk-lib...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -1247,7 +1235,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend...",
+        "...aws-cdk-lib...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -1346,7 +1334,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -1359,7 +1347,7 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
@@ -1378,7 +1366,7 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/DynamoDBModelTableReadIOPS": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/DynamoDBModelTableReadIOPS": [
     {
       "type": "aws:cdk:logicalId",
       "data": "DynamoDBModelTableReadIOPS"
@@ -1394,7 +1382,7 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/DynamoDBModelTableWriteIOPS": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/DynamoDBModelTableWriteIOPS": [
     {
       "type": "aws:cdk:logicalId",
       "data": "DynamoDBModelTableWriteIOPS"
@@ -1410,7 +1398,7 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/DynamoDBBillingMode": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/DynamoDBBillingMode": [
     {
       "type": "aws:cdk:logicalId",
       "data": "DynamoDBBillingMode"
@@ -1426,7 +1414,7 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/DynamoDBEnablePointInTimeRecovery": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/DynamoDBEnablePointInTimeRecovery": [
     {
       "type": "aws:cdk:logicalId",
       "data": "DynamoDBEnablePointInTimeRecovery"
@@ -1442,7 +1430,7 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/DynamoDBEnableServerSideEncryption": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/DynamoDBEnableServerSideEncryption": [
     {
       "type": "aws:cdk:logicalId",
       "data": "DynamoDBEnableServerSideEncryption"
@@ -1458,7 +1446,7 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/HasEnvironmentParameter": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/HasEnvironmentParameter": [
     {
       "type": "aws:cdk:logicalId",
       "data": "HasEnvironmentParameter"
@@ -1474,7 +1462,7 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/ShouldUsePayPerRequestBilling": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/ShouldUsePayPerRequestBilling": [
     {
       "type": "aws:cdk:logicalId",
       "data": "ShouldUsePayPerRequestBilling"
@@ -1490,7 +1478,7 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/ShouldUsePointInTimeRecovery": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/ShouldUsePointInTimeRecovery": [
     {
       "type": "aws:cdk:logicalId",
       "data": "ShouldUsePointInTimeRecovery"
@@ -1506,22 +1494,22 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/TodoTable": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/NoteTable": [
     {
       "type": "graphqltransformer:resourceName",
-      "data": "Todo"
+      "data": "Note"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/CustomTableTodoTable": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/CustomTableNoteTable": [
     {
       "type": "graphqltransformer:resourceName",
-      "data": "Todo"
+      "data": "Note"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/GetAttTodoTableStreamArn": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/GetAttNoteTableStreamArn": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "GetAttTodoTableStreamArn"
+      "data": "GetAttNoteTableStreamArn"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -1534,10 +1522,10 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/GetAttTodoTableName": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/GetAttNoteTableName": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "GetAttTodoTableName"
+      "data": "GetAttNoteTableName"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -1550,22 +1538,22 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/TodoIAMRole": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/NoteIAMRole": [
     {
       "type": "graphqltransformer:resourceName",
-      "data": "TodoIAMRole"
+      "data": "NoteIAMRole"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/TodoDataSource": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/NoteDataSource": [
     {
       "type": "graphqltransformer:resourceName",
-      "data": "TodoTable"
+      "data": "NoteTable"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/queryGetTodoResolver": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/queryGetNoteResolver": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "GetTodoResolver"
+      "data": "GetNoteResolver"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -1576,13 +1564,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "Query.getTodo"
+      "data": "Query.getNote"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/queryListTodosResolver": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/queryListNotesResolver": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "ListTodoResolver"
+      "data": "ListNoteResolver"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -1593,13 +1581,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "Query.listTodos"
+      "data": "Query.listNotes"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/mutationCreateTodoResolver": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/mutationCreateNoteResolver": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "CreateTodoResolver"
+      "data": "CreateNoteResolver"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -1610,13 +1598,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "Mutation.createTodo"
+      "data": "Mutation.createNote"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/mutationUpdateTodoResolver": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/mutationUpdateNoteResolver": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "UpdateTodoResolver"
+      "data": "UpdateNoteResolver"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -1627,13 +1615,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "Mutation.updateTodo"
+      "data": "Mutation.updateNote"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/mutationDeleteTodoResolver": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/mutationDeleteNoteResolver": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "DeleteTodoResolver"
+      "data": "DeleteNoteResolver"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -1644,13 +1632,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "Mutation.deleteTodo"
+      "data": "Mutation.deleteNote"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/subscriptionOnCreateTodoResolver": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/subscriptionOnCreateNoteResolver": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "SubscriptiononCreateTodoResolver"
+      "data": "SubscriptiononCreateNoteResolver"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -1661,13 +1649,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "Subscription.onCreateTodo"
+      "data": "Subscription.onCreateNote"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/subscriptionOnUpdateTodoResolver": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/subscriptionOnUpdateNoteResolver": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "SubscriptiononUpdateTodoResolver"
+      "data": "SubscriptiononUpdateNoteResolver"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -1678,13 +1666,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "Subscription.onUpdateTodo"
+      "data": "Subscription.onUpdateNote"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/subscriptionOnDeleteTodoResolver": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/subscriptionOnDeleteNoteResolver": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "SubscriptiononDeleteTodoResolver"
+      "data": "SubscriptiononDeleteNoteResolver"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -1695,10 +1683,27 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "Subscription.onDeleteTodo"
+      "data": "Subscription.onDeleteNote"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/reference-to-amplifynotesappgradisandboxd7177113e3dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource434AFC03Outputs.amplifynotesappgradisandboxd7177113e3dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent4B808D5BArn": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/noteOwnerResolver": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NoteownerResolver"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify\\graphql-api-construct, @aws-amplify\\backend-data, @aws-amplify\\backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "Note.owner"
+    }
+  ],
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/reference-to-amplifynotesappgradisandboxd7177113e3dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource434AFC03Outputs.amplifynotesappgradisandboxd7177113e3dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent4B808D5BArn": [
     {
       "type": "aws:cdk:logicalId",
       "data": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource434AFC03Outputsamplifynotesappgradisandboxd7177113e3dataamplifyDataAmplifyTableManagerTableManagerCustomProvi24655F4D"
@@ -1706,12 +1711,12 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/reference-to-amplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/reference-to-amplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId": [
     {
       "type": "aws:cdk:logicalId",
       "data": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
@@ -1719,12 +1724,12 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/reference-to-amplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/reference-to-amplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name": [
     {
       "type": "aws:cdk:logicalId",
       "data": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
@@ -1732,12 +1737,12 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/reference-to-amplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputs.amplifynotesappgradisandboxd7177113e3authamplifyAuthauthenticatedUserRole7B3E9540Ref": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/reference-to-amplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputs.amplifynotesappgradisandboxd7177113e3authamplifyAuthauthenticatedUserRole7B3E9540Ref": [
     {
       "type": "aws:cdk:logicalId",
       "data": "referencetoamplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputsamplifynotesappgradisandboxd7177113e3authamplifyAuthauthenticatedUserRole7B3E9540Ref"
@@ -1745,12 +1750,12 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/reference-to-amplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputs.amplifynotesappgradisandboxd7177113e3authamplifyAuthunauthenticatedUserRoleA999B12DRef": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/reference-to-amplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputs.amplifynotesappgradisandboxd7177113e3authamplifyAuthunauthenticatedUserRoleA999B12DRef": [
     {
       "type": "aws:cdk:logicalId",
       "data": "referencetoamplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputsamplifynotesappgradisandboxd7177113e3authamplifyAuthunauthenticatedUserRoleA999B12DRef"
@@ -1758,12 +1763,12 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/reference-to-amplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputs.amplifynotesappgradisandboxd7177113e3authamplifyAuthIdentityPool26223BC2Ref": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/reference-to-amplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputs.amplifynotesappgradisandboxd7177113e3authamplifyAuthIdentityPool26223BC2Ref": [
     {
       "type": "aws:cdk:logicalId",
       "data": "referencetoamplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputsamplifynotesappgradisandboxd7177113e3authamplifyAuthIdentityPool26223BC2Ref"
@@ -1771,15 +1776,15 @@
     {
       "type": "aws:cdk:creationStack",
       "data": [
-        "...aws-cdk-lib, @aws-amplify\\backend, node internals...",
+        "...aws-cdk-lib, node internals...",
         "(no user code in 10 frames, use --stack-trace-limit to capture more)"
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo.NestedStack/Todo.NestedStackResource": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note.NestedStack/Note.NestedStackResource": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "amplifyDataTodoNestedStackTodoNestedStackResource551CEA56"
+      "data": "amplifyDataNoteNestedStackNoteNestedStackResourceA19C7467"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -1788,34 +1793,6 @@
         "Array.forEach (:)",
         "...<anonymous> in @aws-amplify\\graphql-api-construct...",
         "Map.forEach (:)",
-        "...@aws-amplify\\graphql-api-construct..."
-      ]
-    }
-  ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/AuthRolePolicy01/Resource": [
-    {
-      "type": "aws:cdk:logicalId",
-      "data": "amplifyDataAuthRolePolicy01567A5654"
-    },
-    {
-      "type": "aws:cdk:creationStack",
-      "data": [
-        "...aws-cdk-lib, <anonymous> in @aws-amplify\\graphql-api-construct...",
-        "Array.forEach (:)",
-        "...@aws-amplify\\graphql-api-construct..."
-      ]
-    }
-  ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/UnauthRolePolicy01/Resource": [
-    {
-      "type": "aws:cdk:logicalId",
-      "data": "amplifyDataUnauthRolePolicy01355B9DCF"
-    },
-    {
-      "type": "aws:cdk:creationStack",
-      "data": [
-        "...aws-cdk-lib, <anonymous> in @aws-amplify\\graphql-api-construct...",
-        "Array.forEach (:)",
         "...@aws-amplify\\graphql-api-construct..."
       ]
     }
@@ -1996,10 +1973,10 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/TodoIAMRole/Resource": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/NoteIAMRole/Resource": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "TodoIAMRole2DA8E66E"
+      "data": "NoteIAMRoleCA742F19"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2013,13 +1990,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "TodoIAMRole"
+      "data": "NoteIAMRole"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/TodoDataSource/Resource": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/NoteDataSource/Resource": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "TodoDataSource"
+      "data": "NoteDataSource"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2030,13 +2007,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "TodoTable"
+      "data": "NoteTable"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/QuerygetTodoauth0Function/QuerygetTodoauth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/QuerygetNoteauth0Function/QuerygetNoteauth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "QuerygetTodoauth0FunctionQuerygetTodoauth0FunctionAppSyncFunction846D8436"
+      "data": "QuerygetNoteauth0FunctionQuerygetNoteauth0FunctionAppSyncFunction1125F54B"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2047,13 +2024,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "QuerygetTodoauth0Function"
+      "data": "QuerygetNoteauth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/QuerygetTodopostAuth0Function/QuerygetTodopostAuth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/QuerygetNotepostAuth0Function/QuerygetNotepostAuth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "QuerygetTodopostAuth0FunctionQuerygetTodopostAuth0FunctionAppSyncFunction6BE14593"
+      "data": "QuerygetNotepostAuth0FunctionQuerygetNotepostAuth0FunctionAppSyncFunctionBC9940CA"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2064,13 +2041,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "QuerygetTodopostAuth0Function"
+      "data": "QuerygetNotepostAuth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/QueryGetTodoDataResolverFn/QueryGetTodoDataResolverFn.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/QueryGetNoteDataResolverFn/QueryGetNoteDataResolverFn.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "QueryGetTodoDataResolverFnQueryGetTodoDataResolverFnAppSyncFunctionE2B57DAD"
+      "data": "QueryGetNoteDataResolverFnQueryGetNoteDataResolverFnAppSyncFunction2F346125"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2081,13 +2058,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "QueryGetTodoDataResolverFn"
+      "data": "QueryGetNoteDataResolverFn"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/QuerylistTodosauth0Function/QuerylistTodosauth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/QuerylistNotesauth0Function/QuerylistNotesauth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "QuerylistTodosauth0FunctionQuerylistTodosauth0FunctionAppSyncFunction7D761961"
+      "data": "QuerylistNotesauth0FunctionQuerylistNotesauth0FunctionAppSyncFunction4C828F45"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2098,13 +2075,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "QuerylistTodosauth0Function"
+      "data": "QuerylistNotesauth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/QuerylistTodospostAuth0Function/QuerylistTodospostAuth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/QuerylistNotespostAuth0Function/QuerylistNotespostAuth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "QuerylistTodospostAuth0FunctionQuerylistTodospostAuth0FunctionAppSyncFunction154D8577"
+      "data": "QuerylistNotespostAuth0FunctionQuerylistNotespostAuth0FunctionAppSyncFunctionCEA378D3"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2115,13 +2092,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "QuerylistTodospostAuth0Function"
+      "data": "QuerylistNotespostAuth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/QueryListTodosDataResolverFn/QueryListTodosDataResolverFn.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/QueryListNotesDataResolverFn/QueryListNotesDataResolverFn.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "QueryListTodosDataResolverFnQueryListTodosDataResolverFnAppSyncFunctionF825FE47"
+      "data": "QueryListNotesDataResolverFnQueryListNotesDataResolverFnAppSyncFunctionBD5C872B"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2132,13 +2109,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "QueryListTodosDataResolverFn"
+      "data": "QueryListNotesDataResolverFn"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationcreateTodoinit0Function/MutationcreateTodoinit0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationcreateNoteinit0Function/MutationcreateNoteinit0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "MutationcreateTodoinit0FunctionMutationcreateTodoinit0FunctionAppSyncFunction54DE5B8B"
+      "data": "MutationcreateNoteinit0FunctionMutationcreateNoteinit0FunctionAppSyncFunction336343A0"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2149,13 +2126,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "MutationcreateTodoinit0Function"
+      "data": "MutationcreateNoteinit0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationcreateTodoauth0Function/MutationcreateTodoauth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationcreateNoteauth0Function/MutationcreateNoteauth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "MutationcreateTodoauth0FunctionMutationcreateTodoauth0FunctionAppSyncFunction21817E36"
+      "data": "MutationcreateNoteauth0FunctionMutationcreateNoteauth0FunctionAppSyncFunction24439C2F"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2166,13 +2143,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "MutationcreateTodoauth0Function"
+      "data": "MutationcreateNoteauth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationcreateTodopostAuth0Function/MutationcreateTodopostAuth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationcreateNotepostAuth0Function/MutationcreateNotepostAuth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "MutationcreateTodopostAuth0FunctionMutationcreateTodopostAuth0FunctionAppSyncFunctionED59EB9F"
+      "data": "MutationcreateNotepostAuth0FunctionMutationcreateNotepostAuth0FunctionAppSyncFunction6D427EC4"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2183,13 +2160,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "MutationcreateTodopostAuth0Function"
+      "data": "MutationcreateNotepostAuth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationCreateTodoDataResolverFn/MutationCreateTodoDataResolverFn.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationCreateNoteDataResolverFn/MutationCreateNoteDataResolverFn.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "MutationCreateTodoDataResolverFnMutationCreateTodoDataResolverFnAppSyncFunction900EC5CF"
+      "data": "MutationCreateNoteDataResolverFnMutationCreateNoteDataResolverFnAppSyncFunction591F5456"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2200,13 +2177,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "MutationCreateTodoDataResolverFn"
+      "data": "MutationCreateNoteDataResolverFn"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationupdateTodoinit0Function/MutationupdateTodoinit0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationupdateNoteinit0Function/MutationupdateNoteinit0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "MutationupdateTodoinit0FunctionMutationupdateTodoinit0FunctionAppSyncFunction1B95BB19"
+      "data": "MutationupdateNoteinit0FunctionMutationupdateNoteinit0FunctionAppSyncFunction19D28B0F"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2217,13 +2194,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "MutationupdateTodoinit0Function"
+      "data": "MutationupdateNoteinit0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationupdateTodoauth0Function/MutationupdateTodoauth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationupdateNoteauth0Function/MutationupdateNoteauth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "MutationupdateTodoauth0FunctionMutationupdateTodoauth0FunctionAppSyncFunction1E4A3112"
+      "data": "MutationupdateNoteauth0FunctionMutationupdateNoteauth0FunctionAppSyncFunction72CAF43F"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2234,13 +2211,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "MutationupdateTodoauth0Function"
+      "data": "MutationupdateNoteauth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationupdateTodopostAuth0Function/MutationupdateTodopostAuth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationupdateNotepostAuth0Function/MutationupdateNotepostAuth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "MutationupdateTodopostAuth0FunctionMutationupdateTodopostAuth0FunctionAppSyncFunction50C507D7"
+      "data": "MutationupdateNotepostAuth0FunctionMutationupdateNotepostAuth0FunctionAppSyncFunction7DBB904D"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2251,13 +2228,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "MutationupdateTodopostAuth0Function"
+      "data": "MutationupdateNotepostAuth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationUpdateTodoDataResolverFn/MutationUpdateTodoDataResolverFn.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationUpdateNoteDataResolverFn/MutationUpdateNoteDataResolverFn.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "MutationUpdateTodoDataResolverFnMutationUpdateTodoDataResolverFnAppSyncFunctionBC238C49"
+      "data": "MutationUpdateNoteDataResolverFnMutationUpdateNoteDataResolverFnAppSyncFunctionBCC5D9E4"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2268,13 +2245,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "MutationUpdateTodoDataResolverFn"
+      "data": "MutationUpdateNoteDataResolverFn"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationdeleteTodoauth0Function/MutationdeleteTodoauth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationdeleteNoteauth0Function/MutationdeleteNoteauth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "MutationdeleteTodoauth0FunctionMutationdeleteTodoauth0FunctionAppSyncFunctionC82C218C"
+      "data": "MutationdeleteNoteauth0FunctionMutationdeleteNoteauth0FunctionAppSyncFunction5FE2B4D0"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2285,13 +2262,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "MutationdeleteTodoauth0Function"
+      "data": "MutationdeleteNoteauth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationdeleteTodopostAuth0Function/MutationdeleteTodopostAuth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationdeleteNotepostAuth0Function/MutationdeleteNotepostAuth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "MutationdeleteTodopostAuth0FunctionMutationdeleteTodopostAuth0FunctionAppSyncFunction483271A2"
+      "data": "MutationdeleteNotepostAuth0FunctionMutationdeleteNotepostAuth0FunctionAppSyncFunction5E0783EF"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2302,13 +2279,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "MutationdeleteTodopostAuth0Function"
+      "data": "MutationdeleteNotepostAuth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationDeleteTodoDataResolverFn/MutationDeleteTodoDataResolverFn.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationDeleteNoteDataResolverFn/MutationDeleteNoteDataResolverFn.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "MutationDeleteTodoDataResolverFnMutationDeleteTodoDataResolverFnAppSyncFunction3879153F"
+      "data": "MutationDeleteNoteDataResolverFnMutationDeleteNoteDataResolverFnAppSyncFunction3FA3FDA0"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2319,13 +2296,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "MutationDeleteTodoDataResolverFn"
+      "data": "MutationDeleteNoteDataResolverFn"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptiononCreateTodoauth0Function/SubscriptiononCreateTodoauth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptiononCreateNoteauth0Function/SubscriptiononCreateNoteauth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "SubscriptiononCreateTodoauth0FunctionSubscriptiononCreateTodoauth0FunctionAppSyncFunction042EF9E1"
+      "data": "SubscriptiononCreateNoteauth0FunctionSubscriptiononCreateNoteauth0FunctionAppSyncFunction853C832F"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2336,13 +2313,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "SubscriptiononCreateTodoauth0Function"
+      "data": "SubscriptiononCreateNoteauth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptiononCreateTodopostAuth0Function/SubscriptiononCreateTodopostAuth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptiononCreateNotepostAuth0Function/SubscriptiononCreateNotepostAuth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "SubscriptiononCreateTodopostAuth0FunctionSubscriptiononCreateTodopostAuth0FunctionAppSyncFunction18E34C4E"
+      "data": "SubscriptiononCreateNotepostAuth0FunctionSubscriptiononCreateNotepostAuth0FunctionAppSyncFunction2FE4DC1E"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2353,13 +2330,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "SubscriptiononCreateTodopostAuth0Function"
+      "data": "SubscriptiononCreateNotepostAuth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptionOnCreateTodoDataResolverFn/SubscriptionOnCreateTodoDataResolverFn.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptionOnCreateNoteDataResolverFn/SubscriptionOnCreateNoteDataResolverFn.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "SubscriptionOnCreateTodoDataResolverFnSubscriptionOnCreateTodoDataResolverFnAppSyncFunction462A70C9"
+      "data": "SubscriptionOnCreateNoteDataResolverFnSubscriptionOnCreateNoteDataResolverFnAppSyncFunction37D6FFF2"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2370,13 +2347,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "SubscriptionOnCreateTodoDataResolverFn"
+      "data": "SubscriptionOnCreateNoteDataResolverFn"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptiononUpdateTodoauth0Function/SubscriptiononUpdateTodoauth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptiononUpdateNoteauth0Function/SubscriptiononUpdateNoteauth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "SubscriptiononUpdateTodoauth0FunctionSubscriptiononUpdateTodoauth0FunctionAppSyncFunction80D0DFA3"
+      "data": "SubscriptiononUpdateNoteauth0FunctionSubscriptiononUpdateNoteauth0FunctionAppSyncFunction2413D644"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2387,13 +2364,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "SubscriptiononUpdateTodoauth0Function"
+      "data": "SubscriptiononUpdateNoteauth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptiononUpdateTodopostAuth0Function/SubscriptiononUpdateTodopostAuth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptiononUpdateNotepostAuth0Function/SubscriptiononUpdateNotepostAuth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "SubscriptiononUpdateTodopostAuth0FunctionSubscriptiononUpdateTodopostAuth0FunctionAppSyncFunction04445BC7"
+      "data": "SubscriptiononUpdateNotepostAuth0FunctionSubscriptiononUpdateNotepostAuth0FunctionAppSyncFunction30ABF2EE"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2404,13 +2381,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "SubscriptiononUpdateTodopostAuth0Function"
+      "data": "SubscriptiononUpdateNotepostAuth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptionOnUpdateTodoDataResolverFn/SubscriptionOnUpdateTodoDataResolverFn.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptionOnUpdateNoteDataResolverFn/SubscriptionOnUpdateNoteDataResolverFn.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "SubscriptionOnUpdateTodoDataResolverFnSubscriptionOnUpdateTodoDataResolverFnAppSyncFunction523DF0E4"
+      "data": "SubscriptionOnUpdateNoteDataResolverFnSubscriptionOnUpdateNoteDataResolverFnAppSyncFunctionE4137817"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2421,13 +2398,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "SubscriptionOnUpdateTodoDataResolverFn"
+      "data": "SubscriptionOnUpdateNoteDataResolverFn"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptiononDeleteTodoauth0Function/SubscriptiononDeleteTodoauth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptiononDeleteNoteauth0Function/SubscriptiononDeleteNoteauth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "SubscriptiononDeleteTodoauth0FunctionSubscriptiononDeleteTodoauth0FunctionAppSyncFunctionF69F2220"
+      "data": "SubscriptiononDeleteNoteauth0FunctionSubscriptiononDeleteNoteauth0FunctionAppSyncFunction1B717F3B"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2438,13 +2415,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "SubscriptiononDeleteTodoauth0Function"
+      "data": "SubscriptiononDeleteNoteauth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptiononDeleteTodopostAuth0Function/SubscriptiononDeleteTodopostAuth0Function.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptiononDeleteNotepostAuth0Function/SubscriptiononDeleteNotepostAuth0Function.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "SubscriptiononDeleteTodopostAuth0FunctionSubscriptiononDeleteTodopostAuth0FunctionAppSyncFunctionE131CBE7"
+      "data": "SubscriptiononDeleteNotepostAuth0FunctionSubscriptiononDeleteNotepostAuth0FunctionAppSyncFunction7D4AF5B3"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2455,13 +2432,13 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "SubscriptiononDeleteTodopostAuth0Function"
+      "data": "SubscriptiononDeleteNotepostAuth0Function"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptionOnDeleteTodoDataResolverFn/SubscriptionOnDeleteTodoDataResolverFn.AppSyncFunction": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptionOnDeleteNoteDataResolverFn/SubscriptionOnDeleteNoteDataResolverFn.AppSyncFunction": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "SubscriptionOnDeleteTodoDataResolverFnSubscriptionOnDeleteTodoDataResolverFnAppSyncFunction3E641E8C"
+      "data": "SubscriptionOnDeleteNoteDataResolverFnSubscriptionOnDeleteNoteDataResolverFnAppSyncFunctionA1CED045"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2472,10 +2449,27 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "SubscriptionOnDeleteTodoDataResolverFn"
+      "data": "SubscriptionOnDeleteNoteDataResolverFn"
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/CDKMetadata/Default": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/NoteOwnerDataResolverFn/NoteOwnerDataResolverFn.AppSyncFunction": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "NoteOwnerDataResolverFnNoteOwnerDataResolverFnAppSyncFunction66A7C72C"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...@aws-amplify\\graphql-api-construct, @aws-amplify\\backend-data, @aws-amplify\\backend...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    },
+    {
+      "type": "graphqltransformer:resourceName",
+      "data": "NoteOwnerDataResolverFn"
+    }
+  ],
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/CDKMetadata/Default": [
     {
       "type": "aws:cdk:logicalId",
       "data": "CDKMetadata"
@@ -2488,7 +2482,7 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/CDKMetadata/Condition": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/CDKMetadata/Condition": [
     {
       "type": "aws:cdk:logicalId",
       "data": "CDKMetadataAvailable"
@@ -2620,10 +2614,10 @@
       ]
     }
   ],
-  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/TodoTable/Default/Default": [
+  "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/NoteTable/Default/Default": [
     {
       "type": "aws:cdk:logicalId",
-      "data": "TodoTable"
+      "data": "NoteTable"
     },
     {
       "type": "aws:cdk:creationStack",
@@ -2636,7 +2630,7 @@
     },
     {
       "type": "graphqltransformer:resourceName",
-      "data": "Todo"
+      "data": "Note"
     }
   ],
   "/amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Policy/Resource": [

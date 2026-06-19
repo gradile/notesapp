@@ -1,9 +1,9 @@
 {
   "auth": {
-    "user_pool_id": "us-east-2_HZjPSDJYL",
+    "user_pool_id": "us-east-2_IE94gCGyY",
     "aws_region": "us-east-2",
-    "user_pool_client_id": "7b0vc9c5tkgd2lqvs2o05md40j",
-    "identity_pool_id": "us-east-2:387c27dc-5257-4313-a9dc-744d436b862c",
+    "user_pool_client_id": "7f22cf0vj77302ujimd9on3i3e",
+    "identity_pool_id": "us-east-2:4440dfc7-b74a-464f-99dd-74dbf901d195",
     "mfa_methods": [],
     "standard_required_attributes": [
       "email"
@@ -26,17 +26,17 @@
     "unauthenticated_identities_enabled": true
   },
   "data": {
-    "url": "https://utcqvtpjerekphbvcwdv573rza.appsync-api.us-east-2.amazonaws.com/graphql",
+    "url": "https://a62xrhikcbhfndreg45ybxo6zi.appsync-api.us-east-2.amazonaws.com/graphql",
     "aws_region": "us-east-2",
-    "default_authorization_type": "AWS_IAM",
+    "default_authorization_type": "AMAZON_COGNITO_USER_POOLS",
     "authorization_types": [
-      "AMAZON_COGNITO_USER_POOLS"
+      "AWS_IAM"
     ],
     "model_introspection": {
       "version": 1,
       "models": {
-        "Todo": {
-          "name": "Todo",
+        "Note": {
+          "name": "Note",
           "fields": {
             "id": {
               "name": "id",
@@ -45,8 +45,22 @@
               "isRequired": true,
               "attributes": []
             },
-            "content": {
-              "name": "content",
+            "name": {
+              "name": "name",
+              "isArray": false,
+              "type": "String",
+              "isRequired": false,
+              "attributes": []
+            },
+            "description": {
+              "name": "description",
+              "isArray": false,
+              "type": "String",
+              "isRequired": false,
+              "attributes": []
+            },
+            "image": {
+              "name": "image",
               "isArray": false,
               "type": "String",
               "isRequired": false,
@@ -70,7 +84,7 @@
             }
           },
           "syncable": true,
-          "pluralName": "Todos",
+          "pluralName": "Notes",
           "attributes": [
             {
               "type": "model",
@@ -81,8 +95,10 @@
               "properties": {
                 "rules": [
                   {
-                    "allow": "public",
-                    "provider": "identityPool",
+                    "provider": "userPools",
+                    "ownerField": "owner",
+                    "allow": "owner",
+                    "identityClaim": "cognito:username",
                     "operations": [
                       "create",
                       "update",
@@ -107,11 +123,11 @@
   },
   "storage": {
     "aws_region": "us-east-2",
-    "bucket_name": "amplify-notesapp-gradi-sa-amplifynotesdrivebucket1-34mry828ibne",
+    "bucket_name": "amplify-notesapp-gradi-sa-amplifynotesdrivebucket1-qwax3gg2gnwh",
     "buckets": [
       {
         "name": "amplifyNotesDrive",
-        "bucket_name": "amplify-notesapp-gradi-sa-amplifynotesdrivebucket1-34mry828ibne",
+        "bucket_name": "amplify-notesapp-gradi-sa-amplifynotesdrivebucket1-qwax3gg2gnwh",
         "aws_region": "us-east-2",
         "paths": {
           "media/${cognito-identity.amazonaws.com:sub}/*": {

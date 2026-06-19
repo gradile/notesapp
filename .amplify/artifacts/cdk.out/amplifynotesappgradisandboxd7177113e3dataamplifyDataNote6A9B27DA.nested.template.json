@@ -349,7 +349,7 @@
   }
  },
  "Resources": {
-  "TodoTable": {
+  "NoteTable": {
    "Type": "Custom::AmplifyDynamoDBTable",
    "Properties": {
     "ServiceToken": {
@@ -359,7 +359,7 @@
      "Fn::Join": [
       "",
       [
-       "Todo-",
+       "Note-",
        {
         "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
        },
@@ -428,10 +428,10 @@
    "UpdateReplacePolicy": "Delete",
    "DeletionPolicy": "Delete",
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/TodoTable/Default/Default"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/NoteTable/Default/Default"
    }
   },
-  "TodoIAMRole2DA8E66E": {
+  "NoteIAMRoleCA742F19": {
    "Type": "AWS::IAM::Role",
    "Properties": {
     "AssumeRolePolicyDocument": {
@@ -475,7 +475,7 @@
               "Fn::Join": [
                "",
                [
-                "Todo-",
+                "Note-",
                 {
                  "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
                 },
@@ -494,7 +494,7 @@
               "Fn::Join": [
                "",
                [
-                "Todo-",
+                "Note-",
                 {
                  "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
                 },
@@ -517,7 +517,7 @@
      "Fn::Join": [
       "",
       [
-       "TodoIAMRolecfd440-",
+       "NoteIAMRoleee5963-",
        {
         "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
        },
@@ -541,10 +541,10 @@
     ]
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/TodoIAMRole/Resource"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/NoteIAMRole/Resource"
    }
   },
-  "TodoDataSource": {
+  "NoteDataSource": {
    "Type": "AWS::AppSync::DataSource",
    "Properties": {
     "ApiId": {
@@ -568,7 +568,7 @@
              ":",
              {
               "Fn::GetAtt": [
-               "TodoTable",
+               "NoteTable",
                "TableArn"
               ]
              }
@@ -581,23 +581,23 @@
       ]
      }
     },
-    "Name": "TodoTable",
+    "Name": "NoteTable",
     "ServiceRoleArn": {
      "Fn::GetAtt": [
-      "TodoIAMRole2DA8E66E",
+      "NoteIAMRoleCA742F19",
       "Arn"
      ]
     },
     "Type": "AMAZON_DYNAMODB"
    },
    "DependsOn": [
-    "TodoIAMRole2DA8E66E"
+    "NoteIAMRoleCA742F19"
    ],
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/TodoDataSource/Resource"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/NoteDataSource/Resource"
    }
   },
-  "QuerygetTodoauth0FunctionQuerygetTodoauth0FunctionAppSyncFunction846D8436": {
+  "QuerygetNoteauth0FunctionQuerygetNoteauth0FunctionAppSyncFunction1125F54B": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -607,17 +607,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "QuerygetTodoauth0Function",
+    "Name": "QuerygetNoteauth0Function",
     "RequestMappingTemplateS3Location": {
-     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/e7b2a5c2142d48e60eebe8e4beed7cc465c87e36229199889878edae668ef132.vtl"
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/6b25c9b572c67e0f7ad41cb8019a90825f3db4b02a0a15b837c7a82dcb302060.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/QuerygetTodoauth0Function/QuerygetTodoauth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/QuerygetNoteauth0Function/QuerygetNoteauth0Function.AppSyncFunction"
    }
   },
-  "QuerygetTodopostAuth0FunctionQuerygetTodopostAuth0FunctionAppSyncFunction6BE14593": {
+  "QuerygetNotepostAuth0FunctionQuerygetNotepostAuth0FunctionAppSyncFunctionBC9940CA": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -627,17 +627,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "QuerygetTodopostAuth0Function",
+    "Name": "QuerygetNotepostAuth0Function",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/QuerygetTodopostAuth0Function/QuerygetTodopostAuth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/QuerygetNotepostAuth0Function/QuerygetNotepostAuth0Function.AppSyncFunction"
    }
   },
-  "QueryGetTodoDataResolverFnQueryGetTodoDataResolverFnAppSyncFunctionE2B57DAD": {
+  "QueryGetNoteDataResolverFnQueryGetNoteDataResolverFnAppSyncFunction2F346125": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -645,12 +645,12 @@
     },
     "DataSourceName": {
      "Fn::GetAtt": [
-      "TodoDataSource",
+      "NoteDataSource",
       "Name"
      ]
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "QueryGetTodoDataResolverFn",
+    "Name": "QueryGetNoteDataResolverFn",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/08f4d557693d96c1a4efba0f9dc91330e4b19772fd5477c156468843e3d9cb5e.vtl"
     },
@@ -659,37 +659,37 @@
     }
    },
    "DependsOn": [
-    "TodoDataSource"
+    "NoteDataSource"
    ],
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/QueryGetTodoDataResolverFn/QueryGetTodoDataResolverFn.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/QueryGetNoteDataResolverFn/QueryGetNoteDataResolverFn.AppSyncFunction"
    }
   },
-  "GetTodoResolver": {
+  "GetNoteResolver": {
    "Type": "AWS::AppSync::Resolver",
    "Properties": {
     "ApiId": {
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
     },
-    "FieldName": "getTodo",
+    "FieldName": "getNote",
     "Kind": "PIPELINE",
     "PipelineConfig": {
      "Functions": [
       {
        "Fn::GetAtt": [
-        "QuerygetTodoauth0FunctionQuerygetTodoauth0FunctionAppSyncFunction846D8436",
+        "QuerygetNoteauth0FunctionQuerygetNoteauth0FunctionAppSyncFunction1125F54B",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "QuerygetTodopostAuth0FunctionQuerygetTodopostAuth0FunctionAppSyncFunction6BE14593",
+        "QuerygetNotepostAuth0FunctionQuerygetNotepostAuth0FunctionAppSyncFunctionBC9940CA",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "QueryGetTodoDataResolverFnQueryGetTodoDataResolverFnAppSyncFunctionE2B57DAD",
+        "QueryGetNoteDataResolverFnQueryGetNoteDataResolverFnAppSyncFunction2F346125",
         "FunctionId"
        ]
       }
@@ -699,7 +699,7 @@
      "Fn::Join": [
       "",
       [
-       "$util.qr($ctx.stash.put(\"typeName\", \"Query\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"getTodo\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       "$util.qr($ctx.stash.put(\"typeName\", \"Query\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"getNote\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
        {
         "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
        },
@@ -718,7 +718,7 @@
                ":",
                {
                 "Fn::GetAtt": [
-                 "TodoTable",
+                 "NoteTable",
                  "TableArn"
                 ]
                }
@@ -766,10 +766,10 @@
     "TypeName": "Query"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/queryGetTodoResolver"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/queryGetNoteResolver"
    }
   },
-  "QuerylistTodosauth0FunctionQuerylistTodosauth0FunctionAppSyncFunction7D761961": {
+  "QuerylistNotesauth0FunctionQuerylistNotesauth0FunctionAppSyncFunction4C828F45": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -779,17 +779,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "QuerylistTodosauth0Function",
+    "Name": "QuerylistNotesauth0Function",
     "RequestMappingTemplateS3Location": {
-     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/e7b2a5c2142d48e60eebe8e4beed7cc465c87e36229199889878edae668ef132.vtl"
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/6b25c9b572c67e0f7ad41cb8019a90825f3db4b02a0a15b837c7a82dcb302060.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/QuerylistTodosauth0Function/QuerylistTodosauth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/QuerylistNotesauth0Function/QuerylistNotesauth0Function.AppSyncFunction"
    }
   },
-  "QuerylistTodospostAuth0FunctionQuerylistTodospostAuth0FunctionAppSyncFunction154D8577": {
+  "QuerylistNotespostAuth0FunctionQuerylistNotespostAuth0FunctionAppSyncFunctionCEA378D3": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -799,17 +799,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "QuerylistTodospostAuth0Function",
+    "Name": "QuerylistNotespostAuth0Function",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/QuerylistTodospostAuth0Function/QuerylistTodospostAuth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/QuerylistNotespostAuth0Function/QuerylistNotespostAuth0Function.AppSyncFunction"
    }
   },
-  "QueryListTodosDataResolverFnQueryListTodosDataResolverFnAppSyncFunctionF825FE47": {
+  "QueryListNotesDataResolverFnQueryListNotesDataResolverFnAppSyncFunctionBD5C872B": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -817,12 +817,12 @@
     },
     "DataSourceName": {
      "Fn::GetAtt": [
-      "TodoDataSource",
+      "NoteDataSource",
       "Name"
      ]
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "QueryListTodosDataResolverFn",
+    "Name": "QueryListNotesDataResolverFn",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/9fcbe070ecd3023c5bf5b966fa9584757db9762eef123bad0820bd87591b2174.vtl"
     },
@@ -831,37 +831,37 @@
     }
    },
    "DependsOn": [
-    "TodoDataSource"
+    "NoteDataSource"
    ],
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/QueryListTodosDataResolverFn/QueryListTodosDataResolverFn.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/QueryListNotesDataResolverFn/QueryListNotesDataResolverFn.AppSyncFunction"
    }
   },
-  "ListTodoResolver": {
+  "ListNoteResolver": {
    "Type": "AWS::AppSync::Resolver",
    "Properties": {
     "ApiId": {
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
     },
-    "FieldName": "listTodos",
+    "FieldName": "listNotes",
     "Kind": "PIPELINE",
     "PipelineConfig": {
      "Functions": [
       {
        "Fn::GetAtt": [
-        "QuerylistTodosauth0FunctionQuerylistTodosauth0FunctionAppSyncFunction7D761961",
+        "QuerylistNotesauth0FunctionQuerylistNotesauth0FunctionAppSyncFunction4C828F45",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "QuerylistTodospostAuth0FunctionQuerylistTodospostAuth0FunctionAppSyncFunction154D8577",
+        "QuerylistNotespostAuth0FunctionQuerylistNotespostAuth0FunctionAppSyncFunctionCEA378D3",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "QueryListTodosDataResolverFnQueryListTodosDataResolverFnAppSyncFunctionF825FE47",
+        "QueryListNotesDataResolverFnQueryListNotesDataResolverFnAppSyncFunctionBD5C872B",
         "FunctionId"
        ]
       }
@@ -871,7 +871,7 @@
      "Fn::Join": [
       "",
       [
-       "$util.qr($ctx.stash.put(\"typeName\", \"Query\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"listTodos\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       "$util.qr($ctx.stash.put(\"typeName\", \"Query\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"listNotes\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
        {
         "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
        },
@@ -890,7 +890,7 @@
                ":",
                {
                 "Fn::GetAtt": [
-                 "TodoTable",
+                 "NoteTable",
                  "TableArn"
                 ]
                }
@@ -938,10 +938,10 @@
     "TypeName": "Query"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/queryListTodosResolver"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/queryListNotesResolver"
    }
   },
-  "MutationcreateTodoinit0FunctionMutationcreateTodoinit0FunctionAppSyncFunction54DE5B8B": {
+  "MutationcreateNoteinit0FunctionMutationcreateNoteinit0FunctionAppSyncFunction336343A0": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -951,17 +951,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "MutationcreateTodoinit0Function",
+    "Name": "MutationcreateNoteinit0Function",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/a183ddccbd956316c38ef97177b8f088ef0826f62023323f5ae6053d348ccffc.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationcreateTodoinit0Function/MutationcreateTodoinit0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationcreateNoteinit0Function/MutationcreateNoteinit0Function.AppSyncFunction"
    }
   },
-  "MutationcreateTodoauth0FunctionMutationcreateTodoauth0FunctionAppSyncFunction21817E36": {
+  "MutationcreateNoteauth0FunctionMutationcreateNoteauth0FunctionAppSyncFunction24439C2F": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -971,17 +971,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "MutationcreateTodoauth0Function",
+    "Name": "MutationcreateNoteauth0Function",
     "RequestMappingTemplateS3Location": {
-     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/687e5bb5b18cd04d8e695d1f85ad9d43df05210383aba8097d72910c47b3e7e1.vtl"
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/5c947cad7790ae4425cd22303bf90b72525f849b238310639c2dadc2dc73c7eb.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationcreateTodoauth0Function/MutationcreateTodoauth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationcreateNoteauth0Function/MutationcreateNoteauth0Function.AppSyncFunction"
    }
   },
-  "MutationcreateTodopostAuth0FunctionMutationcreateTodopostAuth0FunctionAppSyncFunctionED59EB9F": {
+  "MutationcreateNotepostAuth0FunctionMutationcreateNotepostAuth0FunctionAppSyncFunction6D427EC4": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -991,17 +991,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "MutationcreateTodopostAuth0Function",
+    "Name": "MutationcreateNotepostAuth0Function",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationcreateTodopostAuth0Function/MutationcreateTodopostAuth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationcreateNotepostAuth0Function/MutationcreateNotepostAuth0Function.AppSyncFunction"
    }
   },
-  "MutationCreateTodoDataResolverFnMutationCreateTodoDataResolverFnAppSyncFunction900EC5CF": {
+  "MutationCreateNoteDataResolverFnMutationCreateNoteDataResolverFnAppSyncFunction591F5456": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1009,57 +1009,57 @@
     },
     "DataSourceName": {
      "Fn::GetAtt": [
-      "TodoDataSource",
+      "NoteDataSource",
       "Name"
      ]
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "MutationCreateTodoDataResolverFn",
+    "Name": "MutationCreateNoteDataResolverFn",
     "RequestMappingTemplateS3Location": {
-     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/2bf64327ca5682da4be84d0d16440204e25abc3a221195b41f2d21dfa432e5ab.vtl"
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/ff42c2d8afe8e56420aefff0e56c2c3cd9771e3c157baaf27f2d1ed779904aee.vtl"
     },
     "ResponseMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/f4a52b72209a9dfa197b5e7367a5c378c5bb86de6e29ddd9e48b49a3fe54b249.vtl"
     }
    },
    "DependsOn": [
-    "TodoDataSource"
+    "NoteDataSource"
    ],
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationCreateTodoDataResolverFn/MutationCreateTodoDataResolverFn.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationCreateNoteDataResolverFn/MutationCreateNoteDataResolverFn.AppSyncFunction"
    }
   },
-  "CreateTodoResolver": {
+  "CreateNoteResolver": {
    "Type": "AWS::AppSync::Resolver",
    "Properties": {
     "ApiId": {
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
     },
-    "FieldName": "createTodo",
+    "FieldName": "createNote",
     "Kind": "PIPELINE",
     "PipelineConfig": {
      "Functions": [
       {
        "Fn::GetAtt": [
-        "MutationcreateTodoinit0FunctionMutationcreateTodoinit0FunctionAppSyncFunction54DE5B8B",
+        "MutationcreateNoteinit0FunctionMutationcreateNoteinit0FunctionAppSyncFunction336343A0",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "MutationcreateTodoauth0FunctionMutationcreateTodoauth0FunctionAppSyncFunction21817E36",
+        "MutationcreateNoteauth0FunctionMutationcreateNoteauth0FunctionAppSyncFunction24439C2F",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "MutationcreateTodopostAuth0FunctionMutationcreateTodopostAuth0FunctionAppSyncFunctionED59EB9F",
+        "MutationcreateNotepostAuth0FunctionMutationcreateNotepostAuth0FunctionAppSyncFunction6D427EC4",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "MutationCreateTodoDataResolverFnMutationCreateTodoDataResolverFnAppSyncFunction900EC5CF",
+        "MutationCreateNoteDataResolverFnMutationCreateNoteDataResolverFnAppSyncFunction591F5456",
         "FunctionId"
        ]
       }
@@ -1069,7 +1069,7 @@
      "Fn::Join": [
       "",
       [
-       "$util.qr($ctx.stash.put(\"typeName\", \"Mutation\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"createTodo\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       "$util.qr($ctx.stash.put(\"typeName\", \"Mutation\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"createNote\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
        {
         "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
        },
@@ -1088,7 +1088,7 @@
                ":",
                {
                 "Fn::GetAtt": [
-                 "TodoTable",
+                 "NoteTable",
                  "TableArn"
                 ]
                }
@@ -1136,10 +1136,10 @@
     "TypeName": "Mutation"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/mutationCreateTodoResolver"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/mutationCreateNoteResolver"
    }
   },
-  "MutationupdateTodoinit0FunctionMutationupdateTodoinit0FunctionAppSyncFunction1B95BB19": {
+  "MutationupdateNoteinit0FunctionMutationupdateNoteinit0FunctionAppSyncFunction19D28B0F": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1149,17 +1149,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "MutationupdateTodoinit0Function",
+    "Name": "MutationupdateNoteinit0Function",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/06db846fd14e6fc371f22b12b5545ba8e2dbfeda85d8c8d586c71c282166657b.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationupdateTodoinit0Function/MutationupdateTodoinit0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationupdateNoteinit0Function/MutationupdateNoteinit0Function.AppSyncFunction"
    }
   },
-  "MutationupdateTodoauth0FunctionMutationupdateTodoauth0FunctionAppSyncFunction1E4A3112": {
+  "MutationupdateNoteauth0FunctionMutationupdateNoteauth0FunctionAppSyncFunction72CAF43F": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1167,27 +1167,27 @@
     },
     "DataSourceName": {
      "Fn::GetAtt": [
-      "TodoDataSource",
+      "NoteDataSource",
       "Name"
      ]
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "MutationupdateTodoauth0Function",
+    "Name": "MutationupdateNoteauth0Function",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/1f5fed297da9c32ae3af922bf3a38ccf23b956078887d16891ec06c20c64722c.vtl"
     },
     "ResponseMappingTemplateS3Location": {
-     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/035bca645c95ac13c5dbae712a5a00df2f0b40b2772e5077b865722057d0b2b7.vtl"
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/43eab378161f7d9d88f25d0cdd71f0e20d5a4c116d07c10bf75eff4e92253828.vtl"
     }
    },
    "DependsOn": [
-    "TodoDataSource"
+    "NoteDataSource"
    ],
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationupdateTodoauth0Function/MutationupdateTodoauth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationupdateNoteauth0Function/MutationupdateNoteauth0Function.AppSyncFunction"
    }
   },
-  "MutationupdateTodopostAuth0FunctionMutationupdateTodopostAuth0FunctionAppSyncFunction50C507D7": {
+  "MutationupdateNotepostAuth0FunctionMutationupdateNotepostAuth0FunctionAppSyncFunction7DBB904D": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1197,17 +1197,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "MutationupdateTodopostAuth0Function",
+    "Name": "MutationupdateNotepostAuth0Function",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationupdateTodopostAuth0Function/MutationupdateTodopostAuth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationupdateNotepostAuth0Function/MutationupdateNotepostAuth0Function.AppSyncFunction"
    }
   },
-  "MutationUpdateTodoDataResolverFnMutationUpdateTodoDataResolverFnAppSyncFunctionBC238C49": {
+  "MutationUpdateNoteDataResolverFnMutationUpdateNoteDataResolverFnAppSyncFunctionBCC5D9E4": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1215,12 +1215,12 @@
     },
     "DataSourceName": {
      "Fn::GetAtt": [
-      "TodoDataSource",
+      "NoteDataSource",
       "Name"
      ]
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "MutationUpdateTodoDataResolverFn",
+    "Name": "MutationUpdateNoteDataResolverFn",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/474bf0776ec2164a13191d1a0a9e057154931e4918fea5086f49850d02a5371b.vtl"
     },
@@ -1229,43 +1229,43 @@
     }
    },
    "DependsOn": [
-    "TodoDataSource"
+    "NoteDataSource"
    ],
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationUpdateTodoDataResolverFn/MutationUpdateTodoDataResolverFn.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationUpdateNoteDataResolverFn/MutationUpdateNoteDataResolverFn.AppSyncFunction"
    }
   },
-  "UpdateTodoResolver": {
+  "UpdateNoteResolver": {
    "Type": "AWS::AppSync::Resolver",
    "Properties": {
     "ApiId": {
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
     },
-    "FieldName": "updateTodo",
+    "FieldName": "updateNote",
     "Kind": "PIPELINE",
     "PipelineConfig": {
      "Functions": [
       {
        "Fn::GetAtt": [
-        "MutationupdateTodoinit0FunctionMutationupdateTodoinit0FunctionAppSyncFunction1B95BB19",
+        "MutationupdateNoteinit0FunctionMutationupdateNoteinit0FunctionAppSyncFunction19D28B0F",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "MutationupdateTodoauth0FunctionMutationupdateTodoauth0FunctionAppSyncFunction1E4A3112",
+        "MutationupdateNoteauth0FunctionMutationupdateNoteauth0FunctionAppSyncFunction72CAF43F",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "MutationupdateTodopostAuth0FunctionMutationupdateTodopostAuth0FunctionAppSyncFunction50C507D7",
+        "MutationupdateNotepostAuth0FunctionMutationupdateNotepostAuth0FunctionAppSyncFunction7DBB904D",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "MutationUpdateTodoDataResolverFnMutationUpdateTodoDataResolverFnAppSyncFunctionBC238C49",
+        "MutationUpdateNoteDataResolverFnMutationUpdateNoteDataResolverFnAppSyncFunctionBCC5D9E4",
         "FunctionId"
        ]
       }
@@ -1275,7 +1275,7 @@
      "Fn::Join": [
       "",
       [
-       "$util.qr($ctx.stash.put(\"typeName\", \"Mutation\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"updateTodo\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       "$util.qr($ctx.stash.put(\"typeName\", \"Mutation\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"updateNote\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
        {
         "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
        },
@@ -1294,7 +1294,7 @@
                ":",
                {
                 "Fn::GetAtt": [
-                 "TodoTable",
+                 "NoteTable",
                  "TableArn"
                 ]
                }
@@ -1342,10 +1342,10 @@
     "TypeName": "Mutation"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/mutationUpdateTodoResolver"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/mutationUpdateNoteResolver"
    }
   },
-  "MutationdeleteTodoauth0FunctionMutationdeleteTodoauth0FunctionAppSyncFunctionC82C218C": {
+  "MutationdeleteNoteauth0FunctionMutationdeleteNoteauth0FunctionAppSyncFunction5FE2B4D0": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1353,27 +1353,27 @@
     },
     "DataSourceName": {
      "Fn::GetAtt": [
-      "TodoDataSource",
+      "NoteDataSource",
       "Name"
      ]
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "MutationdeleteTodoauth0Function",
+    "Name": "MutationdeleteNoteauth0Function",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/1f5fed297da9c32ae3af922bf3a38ccf23b956078887d16891ec06c20c64722c.vtl"
     },
     "ResponseMappingTemplateS3Location": {
-     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/04afff6c870576131ba15da50cb5c3c0278fbab9d12c4fd63520a49832c46482.vtl"
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/867fb7d7eb8e4127b6d0136b82c5c3f74a52eb410297086859986f8e7e4b02aa.vtl"
     }
    },
    "DependsOn": [
-    "TodoDataSource"
+    "NoteDataSource"
    ],
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationdeleteTodoauth0Function/MutationdeleteTodoauth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationdeleteNoteauth0Function/MutationdeleteNoteauth0Function.AppSyncFunction"
    }
   },
-  "MutationdeleteTodopostAuth0FunctionMutationdeleteTodopostAuth0FunctionAppSyncFunction483271A2": {
+  "MutationdeleteNotepostAuth0FunctionMutationdeleteNotepostAuth0FunctionAppSyncFunction5E0783EF": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1383,17 +1383,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "MutationdeleteTodopostAuth0Function",
+    "Name": "MutationdeleteNotepostAuth0Function",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationdeleteTodopostAuth0Function/MutationdeleteTodopostAuth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationdeleteNotepostAuth0Function/MutationdeleteNotepostAuth0Function.AppSyncFunction"
    }
   },
-  "MutationDeleteTodoDataResolverFnMutationDeleteTodoDataResolverFnAppSyncFunction3879153F": {
+  "MutationDeleteNoteDataResolverFnMutationDeleteNoteDataResolverFnAppSyncFunction3FA3FDA0": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1401,12 +1401,12 @@
     },
     "DataSourceName": {
      "Fn::GetAtt": [
-      "TodoDataSource",
+      "NoteDataSource",
       "Name"
      ]
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "MutationDeleteTodoDataResolverFn",
+    "Name": "MutationDeleteNoteDataResolverFn",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/4f7907d1209a2c9953a0c053df402c634e359546d70c7cc5c2e8e21ea734880f.vtl"
     },
@@ -1415,37 +1415,37 @@
     }
    },
    "DependsOn": [
-    "TodoDataSource"
+    "NoteDataSource"
    ],
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/MutationDeleteTodoDataResolverFn/MutationDeleteTodoDataResolverFn.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/MutationDeleteNoteDataResolverFn/MutationDeleteNoteDataResolverFn.AppSyncFunction"
    }
   },
-  "DeleteTodoResolver": {
+  "DeleteNoteResolver": {
    "Type": "AWS::AppSync::Resolver",
    "Properties": {
     "ApiId": {
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
     },
-    "FieldName": "deleteTodo",
+    "FieldName": "deleteNote",
     "Kind": "PIPELINE",
     "PipelineConfig": {
      "Functions": [
       {
        "Fn::GetAtt": [
-        "MutationdeleteTodoauth0FunctionMutationdeleteTodoauth0FunctionAppSyncFunctionC82C218C",
+        "MutationdeleteNoteauth0FunctionMutationdeleteNoteauth0FunctionAppSyncFunction5FE2B4D0",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "MutationdeleteTodopostAuth0FunctionMutationdeleteTodopostAuth0FunctionAppSyncFunction483271A2",
+        "MutationdeleteNotepostAuth0FunctionMutationdeleteNotepostAuth0FunctionAppSyncFunction5E0783EF",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "MutationDeleteTodoDataResolverFnMutationDeleteTodoDataResolverFnAppSyncFunction3879153F",
+        "MutationDeleteNoteDataResolverFnMutationDeleteNoteDataResolverFnAppSyncFunction3FA3FDA0",
         "FunctionId"
        ]
       }
@@ -1455,7 +1455,7 @@
      "Fn::Join": [
       "",
       [
-       "$util.qr($ctx.stash.put(\"typeName\", \"Mutation\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"deleteTodo\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       "$util.qr($ctx.stash.put(\"typeName\", \"Mutation\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"deleteNote\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"AMAZON_DYNAMODB\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
        {
         "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
        },
@@ -1474,7 +1474,7 @@
                ":",
                {
                 "Fn::GetAtt": [
-                 "TodoTable",
+                 "NoteTable",
                  "TableArn"
                 ]
                }
@@ -1522,10 +1522,10 @@
     "TypeName": "Mutation"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/mutationDeleteTodoResolver"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/mutationDeleteNoteResolver"
    }
   },
-  "SubscriptiononCreateTodoauth0FunctionSubscriptiononCreateTodoauth0FunctionAppSyncFunction042EF9E1": {
+  "SubscriptiononCreateNoteauth0FunctionSubscriptiononCreateNoteauth0FunctionAppSyncFunction853C832F": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1535,17 +1535,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "SubscriptiononCreateTodoauth0Function",
+    "Name": "SubscriptiononCreateNoteauth0Function",
     "RequestMappingTemplateS3Location": {
-     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/d01a85a7e1c50273d7078990da300e811095a7671cd5d0d3ac8d475cc4c8b124.vtl"
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/3b6d810ef43cdbd93ef462c40b0df0328b89e04f1473a4f82f1178da1f1d5aa0.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptiononCreateTodoauth0Function/SubscriptiononCreateTodoauth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptiononCreateNoteauth0Function/SubscriptiononCreateNoteauth0Function.AppSyncFunction"
    }
   },
-  "SubscriptiononCreateTodopostAuth0FunctionSubscriptiononCreateTodopostAuth0FunctionAppSyncFunction18E34C4E": {
+  "SubscriptiononCreateNotepostAuth0FunctionSubscriptiononCreateNotepostAuth0FunctionAppSyncFunction2FE4DC1E": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1555,17 +1555,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "SubscriptiononCreateTodopostAuth0Function",
+    "Name": "SubscriptiononCreateNotepostAuth0Function",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptiononCreateTodopostAuth0Function/SubscriptiononCreateTodopostAuth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptiononCreateNotepostAuth0Function/SubscriptiononCreateNotepostAuth0Function.AppSyncFunction"
    }
   },
-  "SubscriptionOnCreateTodoDataResolverFnSubscriptionOnCreateTodoDataResolverFnAppSyncFunction462A70C9": {
+  "SubscriptionOnCreateNoteDataResolverFnSubscriptionOnCreateNoteDataResolverFnAppSyncFunction37D6FFF2": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1575,7 +1575,7 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "SubscriptionOnCreateTodoDataResolverFn",
+    "Name": "SubscriptionOnCreateNoteDataResolverFn",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/fe3c43ada4b9d681a5e2312663ef7a73386424d73b73e51f8e2e9d4b50f7c502.vtl"
     },
@@ -1584,34 +1584,34 @@
     }
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptionOnCreateTodoDataResolverFn/SubscriptionOnCreateTodoDataResolverFn.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptionOnCreateNoteDataResolverFn/SubscriptionOnCreateNoteDataResolverFn.AppSyncFunction"
    }
   },
-  "SubscriptiononCreateTodoResolver": {
+  "SubscriptiononCreateNoteResolver": {
    "Type": "AWS::AppSync::Resolver",
    "Properties": {
     "ApiId": {
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
     },
-    "FieldName": "onCreateTodo",
+    "FieldName": "onCreateNote",
     "Kind": "PIPELINE",
     "PipelineConfig": {
      "Functions": [
       {
        "Fn::GetAtt": [
-        "SubscriptiononCreateTodoauth0FunctionSubscriptiononCreateTodoauth0FunctionAppSyncFunction042EF9E1",
+        "SubscriptiononCreateNoteauth0FunctionSubscriptiononCreateNoteauth0FunctionAppSyncFunction853C832F",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "SubscriptiononCreateTodopostAuth0FunctionSubscriptiononCreateTodopostAuth0FunctionAppSyncFunction18E34C4E",
+        "SubscriptiononCreateNotepostAuth0FunctionSubscriptiononCreateNotepostAuth0FunctionAppSyncFunction2FE4DC1E",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "SubscriptionOnCreateTodoDataResolverFnSubscriptionOnCreateTodoDataResolverFnAppSyncFunction462A70C9",
+        "SubscriptionOnCreateNoteDataResolverFnSubscriptionOnCreateNoteDataResolverFnAppSyncFunction37D6FFF2",
         "FunctionId"
        ]
       }
@@ -1621,7 +1621,7 @@
      "Fn::Join": [
       "",
       [
-       "$util.qr($ctx.stash.put(\"typeName\", \"Subscription\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"onCreateTodo\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"NONE\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       "$util.qr($ctx.stash.put(\"typeName\", \"Subscription\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"onCreateNote\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"NONE\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
        {
         "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
        },
@@ -1661,10 +1661,10 @@
     "TypeName": "Subscription"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/subscriptionOnCreateTodoResolver"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/subscriptionOnCreateNoteResolver"
    }
   },
-  "SubscriptiononUpdateTodoauth0FunctionSubscriptiononUpdateTodoauth0FunctionAppSyncFunction80D0DFA3": {
+  "SubscriptiononUpdateNoteauth0FunctionSubscriptiononUpdateNoteauth0FunctionAppSyncFunction2413D644": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1674,17 +1674,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "SubscriptiononUpdateTodoauth0Function",
+    "Name": "SubscriptiononUpdateNoteauth0Function",
     "RequestMappingTemplateS3Location": {
-     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/d01a85a7e1c50273d7078990da300e811095a7671cd5d0d3ac8d475cc4c8b124.vtl"
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/3b6d810ef43cdbd93ef462c40b0df0328b89e04f1473a4f82f1178da1f1d5aa0.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptiononUpdateTodoauth0Function/SubscriptiononUpdateTodoauth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptiononUpdateNoteauth0Function/SubscriptiononUpdateNoteauth0Function.AppSyncFunction"
    }
   },
-  "SubscriptiononUpdateTodopostAuth0FunctionSubscriptiononUpdateTodopostAuth0FunctionAppSyncFunction04445BC7": {
+  "SubscriptiononUpdateNotepostAuth0FunctionSubscriptiononUpdateNotepostAuth0FunctionAppSyncFunction30ABF2EE": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1694,17 +1694,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "SubscriptiononUpdateTodopostAuth0Function",
+    "Name": "SubscriptiononUpdateNotepostAuth0Function",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptiononUpdateTodopostAuth0Function/SubscriptiononUpdateTodopostAuth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptiononUpdateNotepostAuth0Function/SubscriptiononUpdateNotepostAuth0Function.AppSyncFunction"
    }
   },
-  "SubscriptionOnUpdateTodoDataResolverFnSubscriptionOnUpdateTodoDataResolverFnAppSyncFunction523DF0E4": {
+  "SubscriptionOnUpdateNoteDataResolverFnSubscriptionOnUpdateNoteDataResolverFnAppSyncFunctionE4137817": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1714,7 +1714,7 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "SubscriptionOnUpdateTodoDataResolverFn",
+    "Name": "SubscriptionOnUpdateNoteDataResolverFn",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/fe3c43ada4b9d681a5e2312663ef7a73386424d73b73e51f8e2e9d4b50f7c502.vtl"
     },
@@ -1723,34 +1723,34 @@
     }
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptionOnUpdateTodoDataResolverFn/SubscriptionOnUpdateTodoDataResolverFn.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptionOnUpdateNoteDataResolverFn/SubscriptionOnUpdateNoteDataResolverFn.AppSyncFunction"
    }
   },
-  "SubscriptiononUpdateTodoResolver": {
+  "SubscriptiononUpdateNoteResolver": {
    "Type": "AWS::AppSync::Resolver",
    "Properties": {
     "ApiId": {
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
     },
-    "FieldName": "onUpdateTodo",
+    "FieldName": "onUpdateNote",
     "Kind": "PIPELINE",
     "PipelineConfig": {
      "Functions": [
       {
        "Fn::GetAtt": [
-        "SubscriptiononUpdateTodoauth0FunctionSubscriptiononUpdateTodoauth0FunctionAppSyncFunction80D0DFA3",
+        "SubscriptiononUpdateNoteauth0FunctionSubscriptiononUpdateNoteauth0FunctionAppSyncFunction2413D644",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "SubscriptiononUpdateTodopostAuth0FunctionSubscriptiononUpdateTodopostAuth0FunctionAppSyncFunction04445BC7",
+        "SubscriptiononUpdateNotepostAuth0FunctionSubscriptiononUpdateNotepostAuth0FunctionAppSyncFunction30ABF2EE",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "SubscriptionOnUpdateTodoDataResolverFnSubscriptionOnUpdateTodoDataResolverFnAppSyncFunction523DF0E4",
+        "SubscriptionOnUpdateNoteDataResolverFnSubscriptionOnUpdateNoteDataResolverFnAppSyncFunctionE4137817",
         "FunctionId"
        ]
       }
@@ -1760,7 +1760,7 @@
      "Fn::Join": [
       "",
       [
-       "$util.qr($ctx.stash.put(\"typeName\", \"Subscription\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"onUpdateTodo\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"NONE\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       "$util.qr($ctx.stash.put(\"typeName\", \"Subscription\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"onUpdateNote\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"NONE\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
        {
         "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
        },
@@ -1800,10 +1800,10 @@
     "TypeName": "Subscription"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/subscriptionOnUpdateTodoResolver"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/subscriptionOnUpdateNoteResolver"
    }
   },
-  "SubscriptiononDeleteTodoauth0FunctionSubscriptiononDeleteTodoauth0FunctionAppSyncFunctionF69F2220": {
+  "SubscriptiononDeleteNoteauth0FunctionSubscriptiononDeleteNoteauth0FunctionAppSyncFunction1B717F3B": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1813,17 +1813,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "SubscriptiononDeleteTodoauth0Function",
+    "Name": "SubscriptiononDeleteNoteauth0Function",
     "RequestMappingTemplateS3Location": {
-     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/d01a85a7e1c50273d7078990da300e811095a7671cd5d0d3ac8d475cc4c8b124.vtl"
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/3b6d810ef43cdbd93ef462c40b0df0328b89e04f1473a4f82f1178da1f1d5aa0.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptiononDeleteTodoauth0Function/SubscriptiononDeleteTodoauth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptiononDeleteNoteauth0Function/SubscriptiononDeleteNoteauth0Function.AppSyncFunction"
    }
   },
-  "SubscriptiononDeleteTodopostAuth0FunctionSubscriptiononDeleteTodopostAuth0FunctionAppSyncFunctionE131CBE7": {
+  "SubscriptiononDeleteNotepostAuth0FunctionSubscriptiononDeleteNotepostAuth0FunctionAppSyncFunction7D4AF5B3": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1833,17 +1833,17 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "SubscriptiononDeleteTodopostAuth0Function",
+    "Name": "SubscriptiononDeleteNotepostAuth0Function",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c1721bcd774e27c514d3454b5be4f9bdd094c0161b57ddf053d618e3b0086a77.vtl"
     },
     "ResponseMappingTemplate": "$util.toJson({})"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptiononDeleteTodopostAuth0Function/SubscriptiononDeleteTodopostAuth0Function.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptiononDeleteNotepostAuth0Function/SubscriptiononDeleteNotepostAuth0Function.AppSyncFunction"
    }
   },
-  "SubscriptionOnDeleteTodoDataResolverFnSubscriptionOnDeleteTodoDataResolverFnAppSyncFunction3E641E8C": {
+  "SubscriptionOnDeleteNoteDataResolverFnSubscriptionOnDeleteNoteDataResolverFnAppSyncFunctionA1CED045": {
    "Type": "AWS::AppSync::FunctionConfiguration",
    "Properties": {
     "ApiId": {
@@ -1853,7 +1853,7 @@
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
     },
     "FunctionVersion": "2018-05-29",
-    "Name": "SubscriptionOnDeleteTodoDataResolverFn",
+    "Name": "SubscriptionOnDeleteNoteDataResolverFn",
     "RequestMappingTemplateS3Location": {
      "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/fe3c43ada4b9d681a5e2312663ef7a73386424d73b73e51f8e2e9d4b50f7c502.vtl"
     },
@@ -1862,34 +1862,34 @@
     }
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/SubscriptionOnDeleteTodoDataResolverFn/SubscriptionOnDeleteTodoDataResolverFn.AppSyncFunction"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/SubscriptionOnDeleteNoteDataResolverFn/SubscriptionOnDeleteNoteDataResolverFn.AppSyncFunction"
    }
   },
-  "SubscriptiononDeleteTodoResolver": {
+  "SubscriptiononDeleteNoteResolver": {
    "Type": "AWS::AppSync::Resolver",
    "Properties": {
     "ApiId": {
      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
     },
-    "FieldName": "onDeleteTodo",
+    "FieldName": "onDeleteNote",
     "Kind": "PIPELINE",
     "PipelineConfig": {
      "Functions": [
       {
        "Fn::GetAtt": [
-        "SubscriptiononDeleteTodoauth0FunctionSubscriptiononDeleteTodoauth0FunctionAppSyncFunctionF69F2220",
+        "SubscriptiononDeleteNoteauth0FunctionSubscriptiononDeleteNoteauth0FunctionAppSyncFunction1B717F3B",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "SubscriptiononDeleteTodopostAuth0FunctionSubscriptiononDeleteTodopostAuth0FunctionAppSyncFunctionE131CBE7",
+        "SubscriptiononDeleteNotepostAuth0FunctionSubscriptiononDeleteNotepostAuth0FunctionAppSyncFunction7D4AF5B3",
         "FunctionId"
        ]
       },
       {
        "Fn::GetAtt": [
-        "SubscriptionOnDeleteTodoDataResolverFnSubscriptionOnDeleteTodoDataResolverFnAppSyncFunction3E641E8C",
+        "SubscriptionOnDeleteNoteDataResolverFnSubscriptionOnDeleteNoteDataResolverFnAppSyncFunctionA1CED045",
         "FunctionId"
        ]
       }
@@ -1899,7 +1899,7 @@
      "Fn::Join": [
       "",
       [
-       "$util.qr($ctx.stash.put(\"typeName\", \"Subscription\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"onDeleteTodo\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"NONE\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       "$util.qr($ctx.stash.put(\"typeName\", \"Subscription\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"onDeleteNote\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"NONE\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
        {
         "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
        },
@@ -1939,7 +1939,94 @@
     "TypeName": "Subscription"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/subscriptionOnDeleteTodoResolver"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/subscriptionOnDeleteNoteResolver"
+   }
+  },
+  "NoteOwnerDataResolverFnNoteOwnerDataResolverFnAppSyncFunction66A7C72C": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPINONEDSAAC00109Name"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "NoteOwnerDataResolverFn",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/041534e5fd916595f752318f161512d7c7f83b9f2cf32d0f0be381c12253ff68.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/064303962e481067b44300212516363b99aaee539b6bafaf756fdd83ff0b60f0.vtl"
+    }
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/NoteOwnerDataResolverFn/NoteOwnerDataResolverFn.AppSyncFunction"
+   }
+  },
+  "NoteownerResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
+    },
+    "FieldName": "owner",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "NoteOwnerDataResolverFnNoteOwnerDataResolverFnAppSyncFunction66A7C72C",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "$util.qr($ctx.stash.put(\"typeName\", \"Note\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"owner\"))\n$util.qr($ctx.stash.put(\"conditions\", []))\n$util.qr($ctx.stash.put(\"metadata\", {}))\n$util.qr($ctx.stash.metadata.put(\"dataSourceType\", \"NONE\"))\n$util.qr($ctx.stash.metadata.put(\"apiId\", \"",
+       {
+        "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"connectionAttributes\", {}))\n\n$util.qr($ctx.stash.put(\"authRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputsamplifynotesappgradisandboxd7177113e3authamplifyAuthauthenticatedUserRole7B3E9540Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:",
+       {
+        "Ref": "AWS::Partition"
+       },
+       ":sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputsamplifynotesappgradisandboxd7177113e3authamplifyAuthunauthenticatedUserRoleA999B12DRef"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputsamplifynotesappgradisandboxd7177113e3authamplifyAuthIdentityPool26223BC2Ref"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n$util.toJson({})"
+      ]
+     ]
+    },
+    "ResponseMappingTemplate": "$util.toJson($ctx.prev.result)",
+    "TypeName": "Note"
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/noteOwnerResolver"
    }
   },
   "CDKMetadata": {
@@ -1948,17 +2035,17 @@
     "Analytics": "v2:deflate64:H4sIAAAAAAAA/1WOwW6DMAyGn6X34DG67b6Cetwm2L0yiUEpIUGx06pCvPsEnTrt9PuTP9l/AcVbDvkOr5xpM2TOtjB/EAuZRlAPquz8F0YcSSiuUAZvrNjgVU0cUtSkysQSxj/s/GPGK59mc/M4BtPCN7aODsikLI4w18Hd7eBoUThNfPMa5mrTq7ZCweZx8j8dk9driTL4zvYp4tbo97O7UFwU70/ITMLwvobiPRySHkjWAsvqfiaZkqht3Qj21veL8sEQnPnpUrzA8yvkuzNbm8XkxY4E9T1/AA+BIEQ2AQAA"
    },
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo/CDKMetadata/Default"
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note/CDKMetadata/Default"
    },
    "Condition": "CDKMetadataAvailable"
   }
  },
  "Outputs": {
-  "GetAttTodoTableStreamArn": {
+  "GetAttNoteTableStreamArn": {
    "Description": "Your DynamoDB table StreamArn.",
    "Value": {
     "Fn::GetAtt": [
-     "TodoTable",
+     "NoteTable",
      "TableStreamArn"
     ]
    },
@@ -1970,19 +2057,19 @@
        {
         "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
        },
-       "GetAtt:TodoTable:StreamArn"
+       "GetAtt:NoteTable:StreamArn"
       ]
      ]
     }
    }
   },
-  "GetAttTodoTableName": {
+  "GetAttNoteTableName": {
    "Description": "Your DynamoDB table name.",
    "Value": {
     "Fn::Join": [
      "",
      [
-      "Todo-",
+      "Note-",
       {
        "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
       },
@@ -1998,7 +2085,7 @@
        {
         "Ref": "referencetoamplifynotesappgradisandboxd7177113e3dataamplifyDataGraphQLAPI101C8221ApiId"
        },
-       "GetAtt:TodoTable:Name"
+       "GetAtt:NoteTable:Name"
       ]
      ]
     }

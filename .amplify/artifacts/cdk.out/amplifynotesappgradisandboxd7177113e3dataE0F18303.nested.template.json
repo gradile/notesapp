@@ -6,18 +6,10 @@
    "Properties": {
     "AdditionalAuthenticationProviders": [
      {
-      "AuthenticationType": "AMAZON_COGNITO_USER_POOLS",
-      "UserPoolConfig": {
-       "AwsRegion": {
-        "Ref": "AWS::Region"
-       },
-       "UserPoolId": {
-        "Ref": "referencetoamplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputsamplifynotesappgradisandboxd7177113e3authamplifyAuthUserPool0F93ED79Ref"
-       }
-      }
+      "AuthenticationType": "AWS_IAM"
      }
     ],
-    "AuthenticationType": "AWS_IAM",
+    "AuthenticationType": "AMAZON_COGNITO_USER_POOLS",
     "Name": "amplifyData",
     "Tags": [
      {
@@ -32,10 +24,17 @@
       "Key": "created-by",
       "Value": "amplify"
      }
-    ]
+    ],
+    "UserPoolConfig": {
+     "AwsRegion": {
+      "Ref": "AWS::Region"
+     },
+     "DefaultAction": "ALLOW",
+     "UserPoolId": {
+      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputsamplifynotesappgradisandboxd7177113e3authamplifyAuthUserPool0F93ED79Ref"
+     }
+    }
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/GraphQLAPI/Resource"
    }
@@ -50,11 +49,9 @@
      ]
     },
     "DefinitionS3Location": {
-     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/5d06176bcc3e592a227be94f877d286eb82f30e2066d478a8eeb091baf786836.graphql"
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/73f9639b1d1ef60f15bdf57c985ab616e20064b5e3854e6950af6fee79c12e2e.graphql"
     }
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/GraphQLAPI/TransformerSchema"
    }
@@ -72,8 +69,6 @@
     "Name": "NONE_DS",
     "Type": "NONE"
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/GraphQLAPI/NONE_DS/Resource"
    }
@@ -119,7 +114,7 @@
        {
         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
        },
-       "/ede1307c3a96c092d1577c562d3c62a679bafe3e026eecebcab4e0dc70959f04.json"
+       "/9d1005072fd78c5b6d27b8a6e0e4fe71fed83785656417ee1ff357922f3a5af4.json"
       ]
      ]
     }
@@ -132,7 +127,7 @@
     "aws:asset:property": "TemplateURL"
    }
   },
-  "amplifyDataTodoNestedStackTodoNestedStackResource551CEA56": {
+  "amplifyDataNoteNestedStackNoteNestedStackResourceA19C7467": {
    "Type": "AWS::CloudFormation::Stack",
    "Properties": {
     "Parameters": {
@@ -209,7 +204,7 @@
        {
         "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
        },
-       "/1f0f93d04536d9ce5af67fa9582cbf54189be00f5418a5de30ce6d4858f12a87.json"
+       "/526730885aeb005067e8511c450cab49637a7d13bc4a13da80e8f2cc18fb8e61.json"
       ]
      ]
     }
@@ -220,333 +215,9 @@
    "UpdateReplacePolicy": "Delete",
    "DeletionPolicy": "Delete",
    "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Todo.NestedStack/Todo.NestedStackResource",
-    "aws:asset:path": "amplifynotesappgradisandboxd7177113e3dataamplifyDataTodo20600CF0.nested.template.json",
+    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/Note.NestedStack/Note.NestedStackResource",
+    "aws:asset:path": "amplifynotesappgradisandboxd7177113e3dataamplifyDataNote6A9B27DA.nested.template.json",
     "aws:asset:property": "TemplateURL"
-   }
-  },
-  "amplifyDataAuthRolePolicy01567A5654": {
-   "Type": "AWS::IAM::ManagedPolicy",
-   "Properties": {
-    "Description": "",
-    "Path": "/",
-    "PolicyDocument": {
-     "Statement": [
-      {
-       "Action": "appsync:GraphQL",
-       "Effect": "Allow",
-       "Resource": [
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/*",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Todo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Query",
-           "fieldName": "getTodo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Query",
-           "fieldName": "listTodos"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Mutation",
-           "fieldName": "createTodo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Mutation",
-           "fieldName": "updateTodo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Mutation",
-           "fieldName": "deleteTodo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Subscription",
-           "fieldName": "onCreateTodo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Subscription",
-           "fieldName": "onUpdateTodo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Subscription",
-           "fieldName": "onDeleteTodo"
-          }
-         ]
-        }
-       ]
-      }
-     ],
-     "Version": "2012-10-17"
-    },
-    "Roles": [
-     {
-      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputsamplifynotesappgradisandboxd7177113e3authamplifyAuthauthenticatedUserRole7B3E9540Ref"
-     }
-    ]
-   },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
-   "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/AuthRolePolicy01/Resource"
-   }
-  },
-  "amplifyDataUnauthRolePolicy01355B9DCF": {
-   "Type": "AWS::IAM::ManagedPolicy",
-   "Properties": {
-    "Description": "",
-    "Path": "/",
-    "PolicyDocument": {
-     "Statement": [
-      {
-       "Action": "appsync:GraphQL",
-       "Effect": "Allow",
-       "Resource": [
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/*",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Todo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Query",
-           "fieldName": "getTodo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Query",
-           "fieldName": "listTodos"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Mutation",
-           "fieldName": "createTodo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Mutation",
-           "fieldName": "updateTodo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Mutation",
-           "fieldName": "deleteTodo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Subscription",
-           "fieldName": "onCreateTodo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Subscription",
-           "fieldName": "onUpdateTodo"
-          }
-         ]
-        },
-        {
-         "Fn::Sub": [
-          "arn:${AWS::Partition}:appsync:${AWS::Region}:${AWS::AccountId}:apis/${apiId}/types/${typeName}/fields/${fieldName}",
-          {
-           "apiId": {
-            "Fn::GetAtt": [
-             "amplifyDataGraphQLAPI42A6FA33",
-             "ApiId"
-            ]
-           },
-           "typeName": "Subscription",
-           "fieldName": "onDeleteTodo"
-          }
-         ]
-        }
-       ]
-      }
-     ],
-     "Version": "2012-10-17"
-    },
-    "Roles": [
-     {
-      "Ref": "referencetoamplifynotesappgradisandboxd7177113e3authNestedStackauthNestedStackResource9DAEFB4EOutputsamplifynotesappgradisandboxd7177113e3authamplifyAuthunauthenticatedUserRoleA999B12DRef"
-     }
-    ]
-   },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
-   "Metadata": {
-    "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/UnauthRolePolicy01/Resource"
    }
   },
   "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucket9CCB4ACA": {
@@ -659,8 +330,6 @@
      "Version": "2012-10-17"
     }
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Policy/Resource"
    }
@@ -698,8 +367,6 @@
     },
     "Description": "/opt/awscli/aws"
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/AwsCliLayer/Resource",
     "aws:asset:path": "asset.a72522445441e9b66c2f16956c54d4786af8c61c156b80c48a6e7c32fcc49023.zip",
@@ -722,7 +389,7 @@
      }
     ],
     "SourceObjectKeys": [
-     "537b41275796b78f47a1020b0d195a018f4b0990054c40408451ec4e211c692e.zip"
+     "8bb6add026070df153b61bc5efcf588c5ef90ae032a4b8141da1f77db6a82f68.zip"
     ],
     "SourceMarkers": [
      {}
@@ -767,8 +434,6 @@
      }
     ]
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role"
    }
@@ -808,8 +473,6 @@
    "DependsOn": [
     "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
    ],
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler",
     "aws:asset:path": "asset.faa95a81ae7d7373f3e1f242268f904eb748d8d0fdd306e8a6fe515a1905a7d6",
@@ -856,8 +519,6 @@
      }
     ]
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/Resource"
    }
@@ -992,8 +653,6 @@
      }
     ]
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/DefaultPolicy/Resource"
    }
@@ -1042,8 +701,6 @@
     "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleDefaultPolicyFF1C635B",
     "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleA41FC8C2"
    ],
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/Resource",
     "aws:asset:path": "asset.97e9ebf0b174a5c8f7faa505739022b7f509edddffcab9211dcd08b759944c4f",
@@ -1164,8 +821,6 @@
      "Version": "2012-10-17"
     }
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/modelIntrospectionSchemaBucket/Policy/Resource"
    }
@@ -1203,8 +858,6 @@
     },
     "Description": "/opt/awscli/aws"
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/modelIntrospectionSchemaBucketDeployment/AwsCliLayer/Resource",
     "aws:asset:path": "asset.a72522445441e9b66c2f16956c54d4786af8c61c156b80c48a6e7c32fcc49023.zip",
@@ -1227,7 +880,7 @@
      }
     ],
     "SourceObjectKeys": [
-     "540302f8baf6866533f4acbdbf47da2cdbadd1d00c9700893dcb70aa7e182466.zip"
+     "38381aa87e2557b0d4c549ce188c7aa6a7d729660e18c66b357707e31775fb1a.zip"
     ],
     "SourceMarkers": [
      {}
@@ -1261,8 +914,6 @@
      ]
     }
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/AMPLIFY_DATA_GRAPHQL_ENDPOINTParameter/Resource"
    }
@@ -1280,8 +931,6 @@
      "Ref": "modelIntrospectionSchemaBucketF566B665"
     }
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/AMPLIFY_DATA_MODEL_INTROSPECTION_SCHEMA_BUCKET_NAMEParameter/Resource"
    }
@@ -1297,8 +946,6 @@
     "Type": "String",
     "Value": "modelIntrospectionSchema.json"
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/AMPLIFY_DATA_MODEL_INTROSPECTION_SCHEMA_KEYParameter/Resource"
    }
@@ -1314,8 +961,6 @@
     "Type": "String",
     "Value": "amplifyData"
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/AMPLIFY_DATA_DEFAULT_NAMEParameter/Resource"
    }
@@ -1323,7 +968,7 @@
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/6VSTW/bMAz9Lc1Z0dJ026E310F76bosBnYpioCRGZeJPjxRbhYI/u+FrOaj26noiXyPfMSjqKmcfp/IyQXseKzq7VjTSsYH5IB1FUBtxQLZdV6hgB0vI7Qt762S8c5D+/xHFy3dAKMo13Zgft0XLZ2hSj2jAfHgLM4gQJVHlWt7Qr0gMDL+AAsN1nOnSe1Tx3ti4fSgG+KpKWe94CsZbzq1xZDYnD3GkaG/ZEfXo/Pt0h58JYcSy9xadMHNUGPAn6sNqsCjXnxK/SRy6eT0HH/AWRZUAQIatB809r/44CsdLb3aMtbYardP5TfR7EgIYMbAskihFxrMqgYZy7W9hz363+iZnBUV2UZjcPa2syok5piU6yPZC2YjYxU82WYOHgwG9MMND6DvE8zfruw4OHP8fOnyhzz7WOrkYQk7VppkseNS02BLDHarAA3Z5t38f4bOvXuhGn1+C+tqlBv+8jL9Ki+/ycnFhonGvrOBDMpFjq+g3aMsLgMAAA=="
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/6WSTY8TMQyGf8v2nIbSBQ7cZqeCy2opHYkLQpWbcbtu8zHEni1VNP8dZULbZTmtONmv39h64mSu5x9menYDR56a9jC1tNHpAVmwbQTMQa2QQx8NKjjyOkHX8ckbnT5H6B5/2qqjO2BU9daPla/3VUfPVGMe0YF6CB4XINCUUfXWX9Wg+Fanu94cULJTsu9p4ugX+cnHyXO0DMG3erRYl6NVL2GBFgW/bPZohCeD+q/uH6pYy2DJnK5MRb+CrDQ0AoIO/SvB/m0+c+WN562tU4udDads/2laXAoKmFFYVzkMyoLbtKBTvfX3cML4DSNT8Kohv7MowX/qvZFcuST19lIcFIHTaRXs+HhjvG6nZINidjo1EsnvlhDBoWAc/bMYhizLv6p7luAuvytPPeeFdW0z5xqObCzp6si1pRFdjVdqBHbkd3/NfzF0GcMTtRjLvnxoUe/5zdP8nX77Xs9u9kw0jb0XcqhXJf4GNyOsJQ8DAAA="
    },
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/data/CDKMetadata/Default"

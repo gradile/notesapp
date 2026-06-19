@@ -96,8 +96,6 @@
      "Ref": "amplifyAuthUserPool4BA7F805"
     }
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/auth/amplifyAuth/UserPoolAppClient/Resource"
    }
@@ -144,8 +142,6 @@
     ],
     "SupportedLoginProviders": {}
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/auth/amplifyAuth/IdentityPool"
    }
@@ -190,8 +186,6 @@
      }
     ]
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/auth/amplifyAuth/authenticatedUserRole/Resource"
    }
@@ -236,8 +230,6 @@
      }
     ]
    },
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/auth/amplifyAuth/unauthenticatedUserRole/Resource"
    }
@@ -292,8 +284,6 @@
     "amplifyAuthIdentityPool3FDE84CC",
     "amplifyAuthUserPoolAppClient2626C6F8"
    ],
-   "UpdateReplacePolicy": "Delete",
-   "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-notesapp-gradi-sandbox-d7177113e3/auth/amplifyAuth/IdentityPoolRoleAttachment"
    }
